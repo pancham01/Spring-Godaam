@@ -10,7 +10,38 @@
 		<property name="id" value="101" />
 		<property name="name" value="Vikas" />
 		<property name="gender" value="male" />
-		<property name="address" ref="add2"/>
+		<property name="address" ref="add2" />
+		<property name="list">
+			<list>
+				<value>109</value>
+				<value>19</value>
+				<value>309</value>
+				<value>339</value>
+				<value>449</value>
+				<value>109</value>
+			</list>
+		</property>
+		<property name="set">
+			<set>
+				<value>109</value>
+				<value>19</value>
+				<value>309</value>
+				<value>339</value>
+				<value>449</value>
+				<value>109</value>
+			</set>
+		</property>
+		<property name="map">
+			<map>
+				<entry key="1" value="One" />
+				<entry key="2" value="Two" />
+				<entry key="3" value="Three" />
+				<entry key="4" value="Four" />
+				<entry key="5" value="Five" />
+				<entry key="4" value="FOUR" />
+			</map>
+		</property>
+
 	</bean>
 
 
@@ -18,16 +49,44 @@
 		<constructor-arg name="city" value="GZB" />
 		<constructor-arg name="state" value="UP" />
 	</bean>
-	
-	
+
+
 	<bean name="emp1" class="com.my.spring.model.Employee">
 		<constructor-arg name="id" value="101" />
 		<constructor-arg name="name" value="Vikas" />
 		<constructor-arg name="gender" value="male" />
-		<constructor-arg name="address" ref="add1"/>
+		<constructor-arg name="address" ref="add1" />
+		<constructor-arg name="list">
+			<list>
+				<value>109</value>
+				<value>19</value>
+				<value>309</value>
+				<value>339</value>
+				<value>449</value>
+				<value>109</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg name="set">
+			<set>
+				<value>109</value>
+				<value>19</value>
+				<value>309</value>
+				<value>339</value>
+				<value>449</value>
+				<value>109</value>
+			</set>
+		</constructor-arg>
+		<constructor-arg name="map">
+			<map>
+				<entry key="1" value="One" />
+				<entry key="2" value="Two" />
+				<entry key="3" value="Three" />
+				<entry key="4" value="Four" />
+				<entry key="5" value="Five" />
+				<entry key="4" value="FOUR" />
+			</map>
+		</constructor-arg>
 	</bean>
-
-
 	<bean name="add1" class="com.my.spring.model.Address">
 		<constructor-arg name="city" value="Noida" />
 		<constructor-arg name="state" value="UP" />
