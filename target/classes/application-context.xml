@@ -6,7 +6,7 @@
 
 	<!-- bean definitions here -->
 
-	<bean name="emp1" class="com.my.spring.model.Employee" autowire="byType">
+	<bean name="emp1" class="com.my.spring.model.Employee" autowire="byType" scope="singleton">
 		<property name="id" value="101" />
 		<property name="name" value="Vikas" />
 		<property name="gender" value="male" />
